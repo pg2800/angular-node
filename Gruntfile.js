@@ -5,8 +5,9 @@ module.exports = function (grunt){
 				options: {
 					event:'all'
 					,keepRunner: true
+					,liveReload: true
 				}
-				,files: ['src/**/*.js', 'build/tasks', 'specs/**/*.spec.js', 'Gruntfile.js', 'package.json', '!**/node_modules/**']
+				,files: ['src/**/*.js', 'src/**/*.html', 'build/tasks/**/*.js', 'specs/**/*.spec.js', 'Gruntfile.js', 'package.json', '!**/node_modules/**']
 				,tasks: ['build']
 			}
 		}
