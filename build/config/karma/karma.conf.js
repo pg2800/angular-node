@@ -19,5 +19,16 @@ module.exports = function (config){
 		,autoWatch: false
 		,frameworks: ['jasmine']
 		,browsers: ['Chrome']
+		,plugins: [
+		//init plugins
+			//karma
+			'karma-chrome-launcher'
+			,'karma-firefox-launcher'
+			,'karma-ie-launcher'
+			,'karma-phantomjs-launcher'
+			,'karma-jasmine'
+		//end plugins
+		]
+
 	});
 };
