@@ -1,3 +1,3 @@
 module.exports = function (grunt){
-	grunt.registerTask('tests', ['karma:allSpecs:run']);
+	grunt.registerTask('tests', ['karma:unit']);
 }; 
