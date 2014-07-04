@@ -1,21 +1,26 @@
 module.exports = function (grunt){
 	grunt.initConfig({
-		watch: {
+		hostname: 'localhost'
+		,autoWatch: false
+		,basePath: './'
+		,watch: {
 			all: {
-				options: {
-					event:'all'
-					,keepRunner: true
-					,liveReload: true
-				}
-				,files: ['src/**/*.js', 'src/**/*.html', 'build/tasks/**/*.js', 'specs/**/*.spec.js', 'Gruntfile.js', 'package.json', '!**/node_modules/**']
+				files: ['src/**/*.js', 'src/**/*.html', 'build/tasks/**/*.js', 'specs/**/*.spec.js', 'Gruntfile.js', 'package.json', '!**/node_modules/**']
 				,tasks: ['build']
+				,options: {
+					liveReload: true
+					,event:'all'
+					,keepRunner: true
+					,spawn: false
+				}
 			}
 		}
 		,karma: {
-			allSpecs: {
+			unit: {
 				options: {
 					files: ['specs/**/*.spec.js']
-					,browsers: ['Crhome', 'Firefox']
+					,browsers: ['Chrome', 'Firefox']
+					,singleRun: true
 				}
 				,background: true
 			}
