@@ -4,7 +4,7 @@ module.exports = function (config){
 		,files: [ 
 		//init files
 			//required
-			'vendor/angular/v1.2.15/angular.min.js' 
+			'vendor/angular/v1.2.15/angular.min.js'
 			,'vendor/angular/v1.2.15/angular-mocks.js'
 			//src
 			,'src/breadthFirst/module.js'
