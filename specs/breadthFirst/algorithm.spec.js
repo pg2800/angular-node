@@ -1,9 +1,9 @@
 describe("Breadth First Algorithm", function() {
-	// beforeEach(module('breadthFirst'));
-	
+	beforeEach(module('breadthFirst'));
+
 	describe("Functionality", function() {
-		it("should behave...", inject(function (){
-			expect(undefined).toBeUndefined();
+		it("should traverse it in order", inject(function (trees){
+			expect(trees.breadthFirst(trees.treeExample)).toEqual([1,2,3,4,5]);
 		}));
 	});
 	
