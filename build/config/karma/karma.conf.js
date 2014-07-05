@@ -3,8 +3,9 @@ module.exports = function (config){
 		basePath: '../../../'
 		,files: [ 
 		//init files
-			//required
+			//required dependencies
 			'vendor/angular/v1.2.15/angular.min.js'
+			,'vendor/angular/v1.2.15/angular-route.min.js'
 			,'vendor/angular/v1.2.15/angular-mocks.js'
 			//src
 			,'src/breadthFirst/module.js'
@@ -18,7 +19,7 @@ module.exports = function (config){
 		]
 		,autoWatch: false
 		,frameworks: ['jasmine']
-		,browsers: ['Chrome']
+		,browsers: ['Chrome', 'Firefox', 'Ie']
 		,plugins: [
 		//init plugins
 			//karma
