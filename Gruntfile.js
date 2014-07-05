@@ -1,7 +1,7 @@
 module.exports = function (grunt){
 	grunt.initConfig({
 		watch: {
-			karma: {
+			all: {
 				options: {
 					liveReload: true
 					,event:'all'
@@ -9,7 +9,7 @@ module.exports = function (grunt){
 					,spawn: false
 				}
 				,files: ['src/**/*.js', 'src/**/*.html', 'build/tasks/**/*.js', 'build/config/karma/*.conf.js', 'specs/**/*.spec.js', 'Gruntfile.js', 'package.json', '!**/node_modules/**']
-				,tasks: ['tests']
+				,tasks: ['build']
 			}
 		}
 		,karma: {
