@@ -11,10 +11,12 @@ module.exports = function (config){
 			,'src/breadthFirst/module.js'
 			,'src/breadthFirst/routes.js'
 			,'src/breadthFirst/algorithm.js'
+			,'src/common/inject.operator.js'
 			//specs
-			,'specs/breadthFirst/module.spec.js'
-			,'specs/breadthFirst/routes.spec.js'
-			,'specs/breadthFirst/algorithm.spec.js'
+			,'specs/**/*.spec.js'
+			// ,'specs/breadthFirst/routes.spec.js'
+			// ,'specs/breadthFirst/algorithm.spec.js'
+
 		//end files
 		]
 		,autoWatch: false
